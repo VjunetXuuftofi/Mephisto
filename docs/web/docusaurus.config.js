@@ -13,8 +13,9 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
-  organizationName: "facebookresearch", // Usually your GitHub org/user name.
-  projectName: "mephisto", // Usually your repo name.
+  organizationName: "facebookresearch",
+  projectName: "mephisto",
+  trailingSlash: true,
 
   presets: [
     [
@@ -23,14 +24,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/facebook/docusaurus/edit/main/website/",
+          editUrl:
+            "https://github.com/facebookresearch/Mephisto/tree/main/docs/web/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/main/website/blog/",
+            "https://github.com/facebookresearch/Mephisto/tree/main/docs/web/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -68,7 +68,7 @@ const config = {
             position: "left",
             label: "API Reference",
           },
-          // { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/facebookresearch/Mephisto",
             label: "GitHub",
